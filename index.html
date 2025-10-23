@@ -82,10 +82,10 @@ footer { text-align: center; padding: 20px; background: #f7f9fc; }
 <section id="contact" class="contact">
 <h2>The Right Solution Starts Here.</h2>
 <p>We're ready to address all your inquiries and assist you with tailored Apple consulting solutions. Let's unlock the potential of Apple technology for your business together.</p>
-<form>
-  <input type="text" placeholder="Name">
-  <input type="email" placeholder="Email">
-  <textarea placeholder="Message"></textarea>
+<form action="https://formspree.io/f/mwprgppy" method="POST">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" required></textarea>
   <button type="submit">Send</button>
 </form>
 </section>
