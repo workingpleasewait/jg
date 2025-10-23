@@ -1,100 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeff Graber - Apple Consultant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body { margin: 0; font-family: 'Roboto', sans-serif; color: #333; }
-    header { background: linear-gradient(45deg, #0f5af7, #00b4db); color: white; padding: 80px 20px; text-align: center; }
-    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1.25rem; margin-bottom: 2rem; }
-    nav ul { list-style: none; display: flex; justify-content: center; gap: 30px; padding: 0; margin: 0; }
-    nav a { color: white; text-decoration: none; font-weight: 500; }
-    section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-    .service-card { background: #f7f9fc; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .service-card h3 { margin-top: 0; color: #0f5af7; }
-    .about, .testimonials, .contact { background: #ffffff; }
-    .testimonials blockquote { background: #f7f9fc; border-left: 4px solid #0f5af7; margin: 0; padding: 20px; border-radius: 4px; }
-    .contact form { display: grid; gap: 15px; }
-    .contact input, .contact textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
-    .contact button { background: #0f5af7; color: white; border: none; padding: 12px; border-radius: 4px; cursor: pointer; font-size: 1rem; }
-    footer { text-align: center; padding: 20px; background: #f7f9fc; }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      nav ul { flex-direction: column; gap: 15px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeff Graber - Apple Consultant</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; font-family: 'Roboto', sans-serif; color: #333; }
+header { background: linear-gradient(45deg, #0f5af7, #00b4db); color: white; padding: 80px 20px; text-align: center; }
+header img { max-width: 200px; margin-bottom: 20px; }
+header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+header p { font-size: 1.25rem; margin-bottom: 2rem; }
+nav ul { list-style: none; display: flex; justify-content: center; gap: 30px; padding: 0; margin: 0; }
+nav a { color: white; text-decoration: none; font-weight: 500; }
+section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.service-card { background: #f7f9fc; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.service-card h3 { margin-top: 0; color: #0f5af7; }
+.about, .testimonials, .contact { background: #ffffff; }
+.testimonials blockquote { background: #f7f9fc; border-left: 4px solid #0f5af7; margin: 0; padding: 20px; border-radius: 4px; }
+.contact form { display: grid; gap: 15px; }
+.contact input, .contact textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+.contact button { background: #0f5af7; color: white; border: none; padding: 12px; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+footer { text-align: center; padding: 20px; background: #f7f9fc; }
+@media (max-width: 600px) {
+  header h1 { font-size: 2rem; }
+  nav ul { flex-direction: column; gap: 15px; }
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Time is money. We save you both.</h1>
-    <p>We provide Apple consulting expertise, reliability, and the ability to leverage AI to drive growth for your business.</p>
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="services">
-      <h2>Consulting Services</h2>
-      <div class="services">
-        <div class="service-card">
-          <h3>Strategic Planning</h3>
-          <p>Elevate your business with our specialized IT strategy development, blending strategic planning with your business aspirations to sharpen your competitive edge.</p>
-        </div>
-        <div class="service-card">
-          <h3>Integration Solutions</h3>
-          <p>Seamlessly blend technology with your operations. Our customized solutions optimize tech systems for efficiency and synergy.</p>
-        </div>
-        <div class="service-card">
-          <h3>Security & Compliance</h3>
-          <p>Ensure the highest standards of data protection and adhere to industry regulations. We safeguard sensitive information across sectors.</p>
-        </div>
-        <div class="service-card">
-          <h3>Networking Solutions</h3>
-          <p>Expertly crafted network design and installation for any scale, integrating cloud and wireless technology for a secure infrastructure.</p>
-        </div>
-        <div class="service-card">
-          <h3>Device Management</h3>
-          <p>Optimize your Apple ecosystem. We handle deployment and management of devices, apps, and servers to boost operational efficiency.</p>
-        </div>
-        <div class="service-card">
-          <h3>Data Continuity</h3>
-          <p>Comprehensive backup solutions to prevent data loss and system failures, keeping your business data secure and accessible.</p>
-        </div>
-      </div>
-    </section>
-    <section id="about" class="about">
-      <h2>About Jeff Graber</h2>
-      <p>Jeff is a highly accomplished entrepreneur and IT leader with over 25 years of experience within Apple's ecosystem.</p>
-      <p>He founded The Mac Support Store, Brooklyn's first Apple Authorized Reseller and Service Provider, serving over 30,000 customers and generating over $10 million in sales. Recognized as a Top Entrepreneurship Voice on LinkedIn.</p>
-    </section>
-    <section class="testimonials">
-      <h2>Testimonials</h2>
-      <blockquote>
-        <p>“Jeff has been an invaluable asset to our team at Google, delivering expertise and efficiency that have significantly propelled our projects forward.”</p>
-        <footer>— Ed Eigerman, Google</footer>
-      </blockquote>
-    </section>
-    <section id="contact" class="contact">
-      <h2>The Right Solution Starts Here</h2>
-      <p>We're ready to address all your inquiries and assist you with tailored Apple consulting solutions. Let's unlock the potential of Apple technology for your business together.</p>
-      <form>
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" rows="5" placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Jeff Graber. All rights reserved.</p>
-  </footer>
+<header>
+<img src="apple-consultants-network-v3.png" alt="Apple Consultants Network Logo">
+<h1>Time is money. We save you both.</h1>
+<p>We provide Apple consulting expertise, reliability, and the ability to leverage AI to drive growth for your business.</p>
+<nav>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+</header>
+<section id="services" class="services">
+<div class="service-card">
+<h3>Strategic Planning</h3>
+<p>Elevate your business with our specialized IT strategy development. We blend strategic IT planning with your business aspirations, analyzing systems and pinpointing enhancements. Our roadmap for success not only optimizes your IT infrastructure but also sharpens your competitive edge.</p>
+</div>
+<div class="service-card">
+<h3>Integration Solutions</h3>
+<p>Integration Solutions is our bespoke service focusing on seamlessly blending technology with your business operations. We specialize in customizing and optimizing tech systems for efficiency and synergy. Our expertise ensures your tech infrastructure aligns perfectly with your business goals.</p>
+</div>
+<div class="service-card">
+<h3>Security & Compliance</h3>
+<p>Our Security and Compliance service ensures the highest standards of data protection and adherence to industry-specific regulations. We specialize in safeguarding sensitive information across various sectors, tailoring our approach to meet both legal requirements and emerging standards.</p>
+</div>
+<div class="service-card">
+<h3>Networking Solutions</h3>
+<p>Networking Solutions delivers expertly crafted network design and installation for any scale, blending simplicity and complexity. Our service extends beyond traditional setups, integrating cloud technology and wireless networks for a comprehensive, secure infrastructure.</p>
+</div>
+<div class="service-card">
+<h3>Device Management</h3>
+<p>Device Management optimizes your Apple ecosystem, maintaining peak performance across devices and networks. We specialize in deployment, up-to-date management of apps, servers, and devices, ensuring seamless integration. Our service provides peace of mind and boosts operational efficiency.</p>
+</div>
+<div class="service-card">
+<h3>Data Continuity</h3>
+<p>Data Continuity ensures the safety and accessibility of your critical data. Our service offers comprehensive backup solutions to prevent data loss and system failures. With a focus on meticulousness, we keep your business data secure and recoverable, providing continuity and peace of mind.</p>
+</div>
+</section>
+<section id="about" class="about">
+<h2>About Jeff Graber</h2>
+<p>Jeff is a highly accomplished entrepreneur and IT leader with over 25 years of experience within Apple's ecosystem. He is notably recognized for founding The Mac Support Store, Brooklyn's first Apple Authorized Reseller and Service Provider, serving over 30,000 customers and generating over $10 million in sales. He is recognized as a Top Entrepreneurship Voice on LinkedIn.</p>
+</section>
+<section class="testimonials">
+<h2>Testimonials</h2>
+<blockquote>
+<p>"Jeff has been an invaluable asset to our team at Google, delivering expertise and efficiency that have significantly propelled our projects forward."</p>
+<footer>- Ed Eigerman, Google</footer>
+</blockquote>
+</section>
+<section id="contact" class="contact">
+<h2>The Right Solution Starts Here.</h2>
+<p>We're ready to address all your inquiries and assist you with tailored Apple consulting solutions. Let's unlock the potential of Apple technology for your business together.</p>
+<form>
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+  <button type="submit">Send</button>
+</form>
+</section>
+<footer>
+<p>&copy; 2025 Jeff Graber. All rights reserved.</p>
+</footer>
 </body>
 </html>
